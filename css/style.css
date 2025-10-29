@@ -1,23 +1,23 @@
-/* Estilo geral */
+
 body {
     font-family: 'Arial', sans-serif;
     color: #4a4a4a;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff; /* Cor de fundo suave */
+    background-color: #f0f8ff; 
 }
 
-/* Seção de Vídeo */
+
 .video-section {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0;
-  background-color: #f0f8ff; /* Cor suave de fundo para o vídeo */
+  background-color: #f0f8ff; 
 }
 
 .video-container {
-  max-width: 300px; /* Definindo um tamanho menor para o vídeo */
+  max-width: 300px; 
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -33,12 +33,12 @@ body {
   animation: slideIn 1s ease-in-out;
 }
 
-/* Efeito de zoom ao passar o mouse */
+
 .video-container:hover .video-embed {
-  transform: scale(1.05); /* Aumenta 5% ao passar o mouse */
+  transform: scale(1.05); 
 }
 
-/* Animação de entrada para o vídeo */
+
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -50,47 +50,47 @@ body {
   }
 }
 
-/* Seção de Vídeo Vertical (como TikTok) */
+
 .tiktok-video-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ocupa a tela inteira */
+    height: 100vh; 
     padding: 0;
-    background-color: #000; /* Cor de fundo escura para dar contraste */
+    background-color: #000; 
     position: relative;
     overflow: hidden;
-    animation: fadeIn 1s ease-in-out; /* Animação de fade in */
+    animation: fadeIn 1s ease-in-out; 
 }
 
-/* Vídeo Vertical */
+
 .tiktok-video-container {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 60%; /* Reduzido para 60% da altura da tela */
-    width: 80%; /* Largura reduzida para 80% da tela */
-    animation: slideUp 1s ease-in-out; /* Animação de deslizamento para cima */
+    height: 60%; 
+    width: 80%; 
+    animation: slideUp 1s ease-in-out; 
 }
 
-/* Vídeo - Responsivo e na vertical */
+
 .tiktok-video-container iframe {
-    width: 100%; /* Garante que o vídeo ocupe toda a largura disponível */
-    height: 100%; /* Garante que o vídeo ocupe toda a altura do container */
-    object-fit: cover; /* Faz com que o vídeo cubra toda a área sem distorção */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out; /* Animação de zoom */
+    transition: transform 0.3s ease-in-out; 
 }
 
-/* Efeito de zoom para o vídeo */
+
 .tiktok-video-container:hover iframe {
-    transform: scale(1.05); /* Aumenta 5% ao passar o mouse */
+    transform: scale(1.05); 
 }
 
-/* Animação de fade-in para o carregamento do vídeo */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -100,7 +100,7 @@ body {
     }
 }
 
-/* Animação de slide-up para o vídeo */
+
 @keyframes slideUp {
     0% {
         transform: translateY(30px);
@@ -112,7 +112,7 @@ body {
     }
 }
 
-/* Seção de Imagens (ajuste de tamanho) */
+
 .img-container {
     display: flex;
     justify-content: center;
@@ -121,19 +121,19 @@ body {
 }
 
 .img-container img {
-    width: 50%; /* Diminuído para 50% do tamanho original */
+    width: 50%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; /* Animação de zoom */
+    transition: transform 0.3s ease-in-out; 
 }
 
-/* Efeito de zoom para a imagem */
+
 .img-container:hover img {
-    transform: scale(1.05); /* Aumenta a imagem 5% ao passar o mouse */
+    transform: scale(1.05); 
 }
 
-/* Botões (se houver) */
+
 button {
     background-color: #007bff;
     color: #fff;
@@ -146,30 +146,30 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+    background-color: #0056b3; 
 }
 
-/* Ajustes para dispositivos móveis */
+
 @media (max-width: 576px) {
-    /* Ajustes para o vídeo */
+   
     .tiktok-video-container {
-        width: 90%; /* Ajusta a largura para 90% em dispositivos móveis */
-        height: 60%; /* Mantém a altura reduzida */
+        width: 90%; 
+        height: 60%; 
     }
 
     .tiktok-video-container iframe {
-        width: 100%; /* Garante que o vídeo ocupe toda a largura da tela */
-        height: 100%; /* Garante que o vídeo ocupe toda a altura do container */
+        width: 100%;
+        height: 100%; 
     }
 
-    /* Ajuste de tamanho das imagens para dispositivos móveis */
+  
     .img-container img {
-        width: 80%; /* Ajuste para imagens ficarem menores em telas pequenas */
+        width: 80%; 
     }
 
-    /* Ajuste no layout da seção para telas menores */
+   
     .tiktok-video-section {
-        height: 100vh; /* Garante que ocupe toda a altura da tela */
+        height: 100vh; 
     }
 }
 @keyframes floating {
